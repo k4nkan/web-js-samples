@@ -9,10 +9,31 @@
   </head>
   <body>
     <header><h1>Exchange</h1></header>
-    <section><div class="wrap"><a class="back" href="../../index.html">Back</a><h2>為替レート</h2><p>Frankfurter APIで通貨レートを取得して換算します。</p></div></section>
-    <section class="demo"><div class="wrap panel"><div class="form"><input id="amount" type="number" value="100"><select id="base"><option>USD</option><option>EUR</option></select><select id="quote"><option>JPY</option><option>USD</option><option>EUR</option></select><button id="convert">換算</button></div><div id="result" class="result"></div></div></section>
+    <section>
+      <div class="wrap">
+        <a class="back" href="../../index.html">Back</a>
+        <h2>為替レート</h2>
+        <p>Frankfurter APIで通貨レートを取得して換算します。</p>
+      </div>
+    </section>
+    <section class="demo">
+      <div class="wrap panel">
+        <div class="form">
+          <input id="amount" type="number" value="100" /><select id="base">
+            <option>USD</option>
+            <option>EUR</option></select
+          ><select id="quote">
+            <option>JPY</option>
+            <option>USD</option>
+            <option>EUR</option></select
+          ><button id="convert">換算</button>
+        </div>
+        <div id="result" class="result"></div>
+      </div>
+    </section>
     <section data-code-viewer></section>
     <footer>&copy; 2026 Samples</footer>
-    <script src="./script.js"></script><script src="../../assets/copy-code.js"></script>
+    <script src="./script.js"></script>
+    <script src="../../assets/copy-code.js"></script>
   </body>
 </html>

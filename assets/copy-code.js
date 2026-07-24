@@ -6,22 +6,36 @@ const files = [
 ];
 
 const getHtmlToAdd = (code) => {
-  const match = code.match(/<section class="demo">[\s\S]*?\n\s*<section data-code-viewer><\/section>/);
-  const html = match ? match[0].replace(/\n\s*<section data-code-viewer><\/section>/, "") : "";
+  const match = code.match(
+    /<section class="demo">[\s\S]*?\n\s*<section data-code-viewer><\/section>/,
+  );
+  const html = match
+    ? match[0].replace(/\n\s*<section data-code-viewer><\/section>/, "")
+    : "";
 
-  return `<!-- 表示したい場所に追加 -->\n${html.trim()}\n\n<!-- bodyの閉じタグ直前に追加 -->\n<script src="./script.js"></script>`;
+  return [
+    "<!-- 表示したい場所に追加 -->",
+    html.trim(),
+    "",
+    "<!-- bodyの閉じタグ直前に追加 -->",
+    '<script src="./script.js"></script>',
+  ].join("\n");
 };
 
 const getDbSetup = () => {
   const setup = document.querySelector("[data-db-setup]");
   if (!setup) return "";
 
-  const items = [...setup.querySelectorAll("li")].map((item, index) => `${index + 1}. ${item.textContent.trim()}`);
+  const items = [...setup.querySelectorAll("li")].map(
+    (item, index) => `${index + 1}. ${item.textContent.trim()}`,
+  );
   return items.join("\n");
 };
 
 const getCssToAdd = (code) => {
-  const css = code.replace(/@import url\("\.\.\/\.\.\/assets\/sample-layout\.css"\);\n*/g, "").trim();
+  const css = code
+    .replace(/@import url\("\.\.\/\.\.\/assets\/sample-layout\.css"\);\n*/g, "")
+    .trim();
   return css || "/* 追加CSSなし */";
 };
 
@@ -61,7 +75,8 @@ document.querySelectorAll("[data-code-viewer]").forEach((viewer) => {
   `;
 
   files.forEach((file) => {
-    if (file.lang === "setup" && !document.querySelector("[data-db-setup]")) return;
+    if (file.lang === "setup" && !document.querySelector("[data-db-setup]"))
+      return;
 
     const id = `code-${file.lang}`;
     const block = document.createElement("div");
@@ -83,7 +98,8 @@ document.querySelectorAll("[data-code-viewer]").forEach((viewer) => {
         block.querySelector("code").textContent = formatCode(file, code);
       })
       .catch(() => {
-        block.querySelector("code").textContent = "コード表示にはローカルサーバーで開いてください。";
+        block.querySelector("code").textContent =
+          "コード表示にはローカルサーバーで開いてください。";
       });
   });
 });

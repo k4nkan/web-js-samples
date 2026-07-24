@@ -11,7 +11,10 @@ async function loadHolidays() {
   result.innerHTML = Object.entries(holidays)
     .filter(([date]) => date.startsWith(year.value))
     .slice(0, 6)
-    .map(([date, name]) => `<div class="list-item"><strong>${name}</strong><p>${date}</p></div>`)
+    .map(
+      ([date, name]) =>
+        `<div class="list-item"><strong>${name}</strong><p>${date}</p></div>`,
+    )
     .join("");
 }
 

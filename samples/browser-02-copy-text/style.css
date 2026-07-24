@@ -1,0 +1,9 @@
+@import url("../../assets/sample-layout.css");
+
+.copy-target {
+  width: fit-content;
+  border: 1px solid #111111;
+  padding: 12px 14px;
+  background: #f5f5f2;
+  font-weight: 700;
+}

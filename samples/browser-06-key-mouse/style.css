@@ -1,0 +1,16 @@
+@import url("../../assets/sample-layout.css");
+
+.detect-area {
+  display: grid;
+  min-height: 180px;
+  place-items: center;
+  margin-bottom: 16px;
+  border: 1px solid #111111;
+  background: #f5f5f2;
+  font-weight: 800;
+}
+
+.detect-area:focus {
+  outline: 3px solid #111111;
+  outline-offset: 4px;
+}

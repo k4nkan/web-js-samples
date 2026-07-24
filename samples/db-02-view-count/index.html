@@ -10,7 +10,13 @@
   </head>
   <body>
     <header><h1>View Count</h1></header>
-    <section><div class="wrap"><a class="back" href="../../index.html">Back</a><h2>閲覧者数</h2><p>ページを開くたびにDBのcountを増やします。</p></div></section>
+    <section>
+      <div class="wrap">
+        <a class="back" href="../../index.html">Back</a>
+        <h2>閲覧者数</h2>
+        <p>ページを開くたびにDBのcountを増やします。</p>
+      </div>
+    </section>
     <section class="setup" data-db-setup>
       <div class="wrap">
         <h2>データベース準備</h2>
@@ -22,9 +28,20 @@
         </ol>
       </div>
     </section>
-    <section class="demo"><div class="wrap panel"><div id="viewCount" class="view-count">0</div><p id="message" class="muted"></p></div></section>
+    <section>
+      <div class="wrap">
+        <p class="muted">このサイトではプレビュー用データで動かしています。</p>
+      </div>
+    </section>
+    <section class="demo">
+      <div class="wrap panel">
+        <div id="viewCount" class="view-count">0</div>
+        <p id="message" class="muted"></p>
+      </div>
+    </section>
     <section data-code-viewer></section>
     <footer>&copy; 2026 Samples</footer>
-    <script src="./script.js"></script><script src="../../assets/copy-code.js"></script>
+    <script src="./script.js"></script>
+    <script src="../../assets/copy-code.js"></script>
   </body>
 </html>

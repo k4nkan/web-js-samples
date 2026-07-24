@@ -60,8 +60,9 @@ p {
 .form {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 14px;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 18px;
 }
 
 input,
@@ -69,12 +70,18 @@ select,
 button {
   border: 1px solid #111111;
   border-radius: 0;
-  padding: 10px 12px;
+  min-height: 44px;
+  padding: 11px 14px;
   font: inherit;
+  line-height: 1;
 }
 
 button {
+  display: inline-grid;
+  min-width: 44px;
+  place-items: center;
   border-color: #111111;
+  padding: 11px 18px;
   background: #111111;
   color: #ffffff;
   cursor: pointer;

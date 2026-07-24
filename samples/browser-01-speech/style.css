@@ -1,0 +1,10 @@
+@import url("../../assets/sample-layout.css");
+
+textarea {
+  width: min(520px, 100%);
+  min-height: 120px;
+  box-sizing: border-box;
+  border: 1px solid #111111;
+  padding: 12px 14px;
+  font: inherit;
+}

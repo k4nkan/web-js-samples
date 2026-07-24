@@ -1,0 +1,8 @@
+@import url("../../assets/sample-layout.css");
+
+.preview-image {
+  display: block;
+  width: min(360px, 100%);
+  margin-top: 16px;
+  border: 1px solid #111111;
+}

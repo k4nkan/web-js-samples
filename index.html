@@ -3,93 +3,262 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Vanilla JavaScript interaction samples for small HTML/CSS projects." />
-    <title>Samples</title>
+    <meta
+      name="description"
+      content="Vanilla JavaScript samples for small HTML/CSS projects."
+    />
+    <title>Web JS Samples</title>
     <link rel="stylesheet" href="./assets/home.css" />
   </head>
   <body>
     <header>
       <div class="wrap">
-        <h1>Samples</h1>
+        <h1>Web JS Samples</h1>
       </div>
     </header>
 
     <nav class="nav" aria-label="カテゴリ">
-      <a href="#ui">UI</a>
-      <a href="#calc">Calc</a>
-      <a href="#api">API</a>
-      <a href="#db">DB</a>
+      <a href="#visual">見た目・操作</a>
+      <a href="#process">計算・処理</a>
+      <a href="#api">外部API</a>
+      <a href="#browser">ブラウザ機能</a>
     </nav>
 
     <section>
       <div class="wrap">
         <h2>About</h2>
-        <p class="lead">HTML/CSSにJavaScriptを少し足すサンプル集。各ページで追加するHTML、CSS、JSを確認できます。</p>
+        <p class="lead">
+          オリジナル制作のHTML/CSSに、Vanilla
+          JavaScriptを少し追加して使えるサンプル集。各ページで追加コードを確認できます。
+        </p>
       </div>
     </section>
 
     <main>
-      <section class="category" id="ui">
+      <section class="category" id="visual">
         <div class="wrap">
-          <h2>UI編</h2>
+          <h2>見た目・操作</h2>
+          <p class="section-lead">
+            表示やユーザーの操作に変化を加えるサンプルです。
+          </p>
           <div class="grid">
-            <a class="card" href="samples/ui-01-fade-in/"><div class="preview">UI</div><div class="body"><span class="number">UI 01</span><h3>フェードイン</h3><p>画面内に入ったら表示。</p></div></a>
-            <a class="card" href="samples/ui-02-modal/"><div class="preview">Modal</div><div class="body"><span class="number">UI 02</span><h3>モーダル</h3><p>ボタンで開閉。</p></div></a>
-            <a class="card" href="samples/ui-03-tabs/"><div class="preview">Tab</div><div class="body"><span class="number">UI 03</span><h3>タブ切り替え</h3><p>表示内容を切り替え。</p></div></a>
-            <a class="card" href="samples/ui-04-accordion/"><div class="preview">Open</div><div class="body"><span class="number">UI 04</span><h3>アコーディオン</h3><p>項目を開閉。</p></div></a>
-            <a class="card" href="samples/ui-05-filter-list/"><div class="preview">Filter</div><div class="body"><span class="number">UI 05</span><h3>リスト絞り込み</h3><p>入力で絞る。</p></div></a>
-            <a class="card" href="samples/ui-06-toast/"><div class="preview">Msg</div><div class="body"><span class="number">UI 06</span><h3>トースト</h3><p>短い通知を出す。</p></div></a>
-            <a class="card" href="samples/ui-07-counter/"><div class="preview">+1</div><div class="body"><span class="number">UI 07</span><h3>カウンター</h3><p>数値を増減。</p></div></a>
-            <a class="card" href="samples/ui-08-character-count/"><div class="preview">Text</div><div class="body"><span class="number">UI 08</span><h3>文字数カウント</h3><p>入力文字数を表示。</p></div></a>
-            <a class="card" href="samples/ui-09-custom-cursor/"><div class="preview">Cursor</div><div class="body"><span class="number">UI 09</span><h3>カーソル</h3><p>丸をマウスに追従。</p></div></a>
-            <a class="card" href="samples/ui-10-gradient-switch/"><div class="preview">Grad</div><div class="body"><span class="number">UI 10</span><h3>グラデーション</h3><p>背景を切り替え。</p></div></a>
-            <a class="card" href="samples/ui-11-click-background/"><div class="preview">Color</div><div class="body"><span class="number">UI 11</span><h3>背景変更</h3><p>クリックで色変更。</p></div></a>
-            <a class="card" href="samples/ui-12-copy-text/"><div class="preview">Copy</div><div class="body"><span class="number">UI 12</span><h3>テキストコピー</h3><p>ボタンでコピー。</p></div></a>
-            <a class="card" href="samples/ui-13-scroll-progress/"><div class="preview">Bar</div><div class="body"><span class="number">UI 13</span><h3>進捗バー</h3><p>スクロール量を表示。</p></div></a>
-            <a class="card" href="samples/ui-14-password-toggle/"><div class="preview">Show</div><div class="body"><span class="number">UI 14</span><h3>表示切替</h3><p>inputのtype変更。</p></div></a>
+            <a class="card" href="samples/ui-04-accordion/">
+              <div class="preview">Show</div>
+              <div class="body">
+                <span class="number">VISUAL 01</span>
+                <h3>要素の表示・非表示</h3>
+                <p>クリックで表示を切り替える。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/ui-01-fade-in/">
+              <div class="preview">Move</div>
+              <div class="body">
+                <span class="number">VISUAL 02</span>
+                <h3>アニメーション</h3>
+                <p>画面内に入ったら動かす。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/ui-02-modal/">
+              <div class="preview">Modal</div>
+              <div class="body">
+                <span class="number">VISUAL 03</span>
+                <h3>ポップアップ</h3>
+                <p>ボタンで重ねて表示する。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/ui-09-custom-cursor/">
+              <div class="preview">Cursor</div>
+              <div class="body">
+                <span class="number">VISUAL 04</span>
+                <h3>クリックやカーソルへの反応</h3>
+                <p>マウス位置に合わせて動かす。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/ui-11-click-background/">
+              <div class="preview">Random</div>
+              <div class="body">
+                <span class="number">VISUAL 05</span>
+                <h3>ランダムな表示や配置</h3>
+                <p>クリックごとに表示を変える。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/ui-05-filter-list/">
+              <div class="preview">Input</div>
+              <div class="body">
+                <span class="number">VISUAL 06</span>
+                <h3>入力に応じた画面変化</h3>
+                <p>入力内容で表示を絞る。</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="category" id="calc">
+      <section class="category" id="process">
         <div class="wrap">
-          <h2>計算編</h2>
+          <h2>計算・処理</h2>
+          <p class="section-lead">
+            入力された値や情報をJavaScriptで処理するサンプルです。
+          </p>
           <div class="grid">
-            <a class="card" href="samples/calc-01-basic/"><div class="preview">Calc</div><div class="body"><span class="number">CALC 01</span><h3>基本計算</h3><p>四則演算。</p></div></a>
-            <a class="card" href="samples/calc-02-tax/"><div class="preview">Tax</div><div class="body"><span class="number">CALC 02</span><h3>税込計算</h3><p>税率を掛ける。</p></div></a>
-            <a class="card" href="samples/calc-03-split-bill/"><div class="preview">Split</div><div class="body"><span class="number">CALC 03</span><h3>割り勘計算</h3><p>人数で割る。</p></div></a>
-            <a class="card" href="samples/calc-04-average/"><div class="preview">Avg</div><div class="body"><span class="number">CALC 04</span><h3>平均点</h3><p>平均を出す。</p></div></a>
-            <a class="card" href="samples/calc-05-percent/"><div class="preview">Rate</div><div class="body"><span class="number">CALC 05</span><h3>割合計算</h3><p>割合を掛ける。</p></div></a>
-            <a class="card" href="samples/calc-06-bmi/"><div class="preview">BMI</div><div class="body"><span class="number">CALC 06</span><h3>BMI</h3><p>身長と体重で計算。</p></div></a>
-            <a class="card" href="samples/calc-07-unit-converter/"><div class="preview">Unit</div><div class="body"><span class="number">CALC 07</span><h3>単位変換</h3><p>cmをmへ変換。</p></div></a>
-            <a class="card" href="samples/calc-08-discount/"><div class="preview">Off</div><div class="body"><span class="number">CALC 08</span><h3>割引計算</h3><p>割引後を出す。</p></div></a>
+            <a class="card" href="samples/calc-01-basic/">
+              <div class="preview">Calc</div>
+              <div class="body">
+                <span class="number">PROCESS 01</span>
+                <h3>四則演算</h3>
+                <p>2つの数値を計算する。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/calc-07-unit-converter/">
+              <div class="preview">Convert</div>
+              <div class="body">
+                <span class="number">PROCESS 02</span>
+                <h3>数値の変換</h3>
+                <p>単位や表記を変換する。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/ui-08-character-count/">
+              <div class="preview">Count</div>
+              <div class="body">
+                <span class="number">PROCESS 03</span>
+                <h3>文字数や回数の集計</h3>
+                <p>入力文字数を数える。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/calc-09-condition/">
+              <div class="preview">Judge</div>
+              <div class="body">
+                <span class="number">PROCESS 04</span>
+                <h3>条件による判定</h3>
+                <p>数値に応じて文言を変える。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/calc-10-random-result/">
+              <div class="preview">Random</div>
+              <div class="body">
+                <span class="number">PROCESS 05</span>
+                <h3>ランダムな結果の生成</h3>
+                <p>候補から1つ選んで表示する。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/calc-11-date-difference/">
+              <div class="preview">Date</div>
+              <div class="body">
+                <span class="number">PROCESS 06</span>
+                <h3>日付や時間を使った処理</h3>
+                <p>今日から指定日までを計算する。</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
       <section class="category" id="api">
         <div class="wrap">
-          <h2>API編</h2>
+          <h2>外部API</h2>
+          <p class="section-lead">
+            公開APIからデータを取得して表示するサンプルです。
+          </p>
           <div class="grid">
-            <a class="card" href="samples/api-01-weather/"><div class="preview">Weather</div><div class="body"><span class="number">API 01</span><h3>天気カード</h3><p>天気を取得。</p></div></a>
-            <a class="card" href="samples/api-02-book-search/"><div class="preview">Book</div><div class="body"><span class="number">API 02</span><h3>本検索</h3><p>本を検索。</p></div></a>
-            <a class="card" href="samples/api-03-dog-image/"><div class="preview">Image</div><div class="body"><span class="number">API 03</span><h3>画像取得</h3><p>画像URLを表示。</p></div></a>
-            <a class="card" href="samples/api-04-dictionary/"><div class="preview">Word</div><div class="body"><span class="number">API 04</span><h3>英単語辞書</h3><p>意味を取得。</p></div></a>
-            <a class="card" href="samples/api-05-exchange-rate/"><div class="preview">Money</div><div class="body"><span class="number">API 05</span><h3>為替レート</h3><p>レートを取得。</p></div></a>
-            <a class="card" href="samples/api-06-github-user/"><div class="preview">Git</div><div class="body"><span class="number">API 06</span><h3>GitHubユーザー</h3><p>プロフィール取得。</p></div></a>
-            <a class="card" href="samples/api-07-zipcode/"><div class="preview">Zip</div><div class="body"><span class="number">API 07</span><h3>郵便番号</h3><p>住所を取得。</p></div></a>
-            <a class="card" href="samples/api-08-qr-code/"><div class="preview">QR</div><div class="body"><span class="number">API 08</span><h3>QRコード</h3><p>画像URLを作成。</p></div></a>
-            <a class="card" href="samples/api-09-holidays/"><div class="preview">Date</div><div class="body"><span class="number">API 09</span><h3>祝日リスト</h3><p>祝日を取得。</p></div></a>
+            <a class="card" href="samples/api-02-book-search/">
+              <div class="preview">Search</div>
+              <div class="body">
+                <span class="number">API 01</span>
+                <h3>入力内容に応じた検索</h3>
+                <p>キーワードで外部データを探す。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/api-04-dictionary/">
+              <div class="preview">Text</div>
+              <div class="body">
+                <span class="number">API 02</span>
+                <h3>画像や文章の取得</h3>
+                <p>APIから文章データを取得する。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/api-01-weather/">
+              <div class="preview">Weather</div>
+              <div class="body">
+                <span class="number">API 03</span>
+                <h3>天気や地域情報の取得</h3>
+                <p>地域ごとの天気を表示する。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/api-09-holidays/">
+              <div class="preview">List</div>
+              <div class="body">
+                <span class="number">API 04</span>
+                <h3>外部データの一覧表示</h3>
+                <p>取得したデータを並べる。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/api-03-dog-image/">
+              <div class="preview">Random</div>
+              <div class="body">
+                <span class="number">API 05</span>
+                <h3>ランダムなデータの取得</h3>
+                <p>ランダム画像を取得する。</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="category" id="db">
+      <section class="category" id="browser">
         <div class="wrap">
-          <h2>DB編</h2>
+          <h2>ブラウザ機能</h2>
+          <p class="section-lead">
+            ブラウザに標準で用意されている機能を利用するサンプルです。
+          </p>
           <div class="grid">
-            <a class="card" href="samples/db-01-like-count/"><div class="preview">Like</div><div class="body"><span class="number">DB 01</span><h3>いいね数</h3><p>1行目のcountを更新。</p></div></a>
-            <a class="card" href="samples/db-02-view-count/"><div class="preview">View</div><div class="body"><span class="number">DB 02</span><h3>閲覧者数</h3><p>表示時にcount更新。</p></div></a>
+            <a class="card" href="samples/browser-01-speech/">
+              <div class="preview">Voice</div>
+              <div class="body">
+                <span class="number">BROWSER 01</span>
+                <h3>音声読み上げ</h3>
+                <p>入力テキストを読み上げる。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/browser-02-copy-text/">
+              <div class="preview">Copy</div>
+              <div class="body">
+                <span class="number">BROWSER 02</span>
+                <h3>テキストのコピー</h3>
+                <p>Clipboard APIでコピーする。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/browser-03-image-preview/">
+              <div class="preview">File</div>
+              <div class="body">
+                <span class="number">BROWSER 03</span>
+                <h3>ファイルや画像の読み込み</h3>
+                <p>選んだ画像を表示する。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/browser-04-current-time/">
+              <div class="preview">Time</div>
+              <div class="body">
+                <span class="number">BROWSER 04</span>
+                <h3>現在時刻の取得</h3>
+                <p>現在の日付と時刻を表示する。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/browser-05-geolocation/">
+              <div class="preview">Geo</div>
+              <div class="body">
+                <span class="number">BROWSER 05</span>
+                <h3>位置情報の取得</h3>
+                <p>緯度と経度を取得する。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/browser-06-key-mouse/">
+              <div class="preview">Input</div>
+              <div class="body">
+                <span class="number">BROWSER 06</span>
+                <h3>キーボードやマウス操作の検知</h3>
+                <p>押したキーとマウス位置を表示する。</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>

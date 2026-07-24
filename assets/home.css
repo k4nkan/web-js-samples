@@ -31,9 +31,9 @@ header {
 }
 
 .nav a {
-  min-width: 90px;
+  min-width: 132px;
   border-right: 1px solid #111111;
-  padding: 12px 18px;
+  padding: 14px 20px;
   color: #111111;
   font-weight: 800;
   text-align: center;
@@ -80,6 +80,13 @@ h2 {
   margin: 0;
   color: #444444;
   font-size: 1rem;
+}
+
+.section-lead {
+  max-width: 720px;
+  margin: -6px 0 22px;
+  color: #444444;
+  font-size: 0.95rem;
 }
 
 .category:nth-of-type(even) {
@@ -157,6 +164,7 @@ footer {
 
   .nav a {
     min-width: auto;
-    padding: 10px 16px;
+    padding: 12px 18px;
+    white-space: nowrap;
   }
 }

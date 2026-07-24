@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BROWSER 03 Image Preview</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../assets/sample-common.css" />
+  </head>
+  <body>
+    <header><h1>Preview</h1></header>
+    <section>
+      <div class="wrap">
+        <a class="back" href="../../index.html">Back</a>
+        <h2>画像プレビュー</h2>
+        <p>選択した画像ファイルをページ内に表示します。</p>
+      </div>
+    </section>
+    <section class="demo">
+      <div class="wrap panel">
+        <input id="imageFile" type="file" accept="image/*" />
+        <img id="previewImage" class="preview-image" alt="" hidden />
+        <p id="fileName" class="muted"></p>
+      </div>
+    </section>
+    <section data-code-viewer></section>
+    <footer>&copy; 2026 Samples</footer>
+    <script src="./script.js"></script>
+    <script src="../../assets/copy-code.js"></script>
+  </body>
+</html>

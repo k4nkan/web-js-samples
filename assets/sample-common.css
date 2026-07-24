@@ -31,9 +31,13 @@
 }
 
 .copy-button {
+  display: inline-grid;
+  min-width: 64px;
+  min-height: 40px;
+  place-items: center;
   border: 0;
   border-radius: 0;
-  padding: 8px 12px;
+  padding: 9px 14px;
   background: #222;
   color: #fff;
   font: inherit;
