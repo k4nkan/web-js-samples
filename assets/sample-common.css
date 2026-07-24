@@ -48,14 +48,14 @@
 
 .code-box {
   max-width: 100%;
-  max-height: 420px;
-  overflow: auto;
+  overflow: visible;
   border-radius: 0;
   background: #111827;
   color: #e5e7eb;
 }
 
 .code-box pre {
+  overflow-x: auto;
   margin: 0;
   padding: 16px;
 }
