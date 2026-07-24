@@ -1,0 +1,68 @@
+.code-section {
+  width: min(880px, calc(100% - 32px));
+  margin: 40px auto 80px;
+}
+
+.code-section > h2 {
+  margin: 0 0 6px;
+}
+
+.code-note {
+  margin: 0 0 18px;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.code-block {
+  margin-bottom: 20px;
+}
+
+.code-head {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.code-head h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.copy-button {
+  border: 0;
+  border-radius: 0;
+  padding: 8px 12px;
+  background: #222;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.code-box {
+  max-height: 420px;
+  overflow: auto;
+  border-radius: 0;
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.code-box pre {
+  margin: 0;
+  padding: 16px;
+}
+
+.code-box code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+@media (max-width: 640px) {
+  .code-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

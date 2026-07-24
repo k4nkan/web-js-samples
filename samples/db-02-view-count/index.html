@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DB 02 View Count</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../assets/sample-common.css" />
+    <script src="../../templates/initialize.js"></script>
+  </head>
+  <body>
+    <header><h1>View Count</h1></header>
+    <section><div class="wrap"><a class="back" href="../../index.html">Back</a><h2>閲覧者数</h2><p>ページを開くたびにDBのcountを増やします。</p></div></section>
+    <section class="setup" data-db-setup>
+      <div class="wrap">
+        <h2>データベース準備</h2>
+        <ol>
+          <li>データベースで「閲覧者数」を作成</li>
+          <li>列を `page` / `count` にする</li>
+          <li>GUIで1行追加: `page` は `top`、`count` は `0`</li>
+          <li>HTML側では元からある `initialize.js` をそのまま使う</li>
+        </ol>
+      </div>
+    </section>
+    <section class="demo"><div class="wrap panel"><div id="viewCount" class="view-count">0</div><p id="message" class="muted"></p></div></section>
+    <section data-code-viewer></section>
+    <footer>&copy; 2026 Samples</footer>
+    <script src="./script.js"></script><script src="../../assets/copy-code.js"></script>
+  </body>
+</html>

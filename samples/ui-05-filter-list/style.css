@@ -1,0 +1,10 @@
+@import url("../../assets/sample-layout.css");
+
+#keyword {
+  width: min(360px, 100%);
+  margin-bottom: 16px;
+}
+
+.list-item[hidden] {
+  display: none;
+}

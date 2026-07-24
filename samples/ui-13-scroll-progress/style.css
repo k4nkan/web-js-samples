@@ -1,0 +1,20 @@
+@import url("../../assets/sample-layout.css");
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 0;
+  height: 6px;
+  background: #111111;
+}
+
+.tall-box {
+  display: grid;
+  min-height: 110vh;
+  place-items: center;
+  border: 1px solid #111111;
+  font-size: 32px;
+  font-weight: 800;
+}

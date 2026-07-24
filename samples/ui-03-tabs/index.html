@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UI 03 Tabs</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../assets/sample-common.css" />
+  </head>
+  <body>
+    <header><h1>Tabs</h1></header>
+    <section><div class="wrap"><a class="back" href="../../index.html">Back</a><h2>タブ切り替え</h2><p>押したボタンに合わせて表示する内容を切り替えます。</p></div></section>
+    <section class="demo"><div class="wrap panel"><div class="tabs"><button data-tab="about">紹介</button><button data-tab="menu">メニュー</button><button data-tab="info">情報</button></div><div id="about" class="tab-panel card">お店やサービスの紹介を表示します。</div><div id="menu" class="tab-panel card" hidden>商品やメニューを表示します。</div><div id="info" class="tab-panel card" hidden>住所や営業時間を表示します。</div></div></section>
+    <section data-code-viewer></section>
+    <footer>&copy; 2026 Samples</footer>
+    <script src="./script.js"></script><script src="../../assets/copy-code.js"></script>
+  </body>
+</html>

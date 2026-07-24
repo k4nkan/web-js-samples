@@ -1,0 +1,15 @@
+@import url("../../assets/sample-layout.css");
+
+#toast {
+  display: none;
+  width: fit-content;
+  margin-top: 16px;
+  border-radius: 0;
+  padding: 10px 14px;
+  background: #171717;
+  color: #ffffff;
+}
+
+#toast.is-show {
+  display: block;
+}

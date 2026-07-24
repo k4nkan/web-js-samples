@@ -1,0 +1,19 @@
+@import url("../../assets/sample-layout.css");
+
+.gradient-box {
+  height: 220px;
+  margin-top: 16px;
+  border: 1px solid #111111;
+}
+
+.gradient-1 {
+  background: linear-gradient(135deg, #ffffff, #d8f3dc, #95d5b2);
+}
+
+.gradient-2 {
+  background: linear-gradient(135deg, #ffffff, #ffd6a5, #ffadad);
+}
+
+.gradient-3 {
+  background: linear-gradient(135deg, #ffffff, #bde0fe, #a2d2ff);
+}

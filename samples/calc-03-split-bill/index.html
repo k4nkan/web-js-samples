@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CALC 03 Split Bill</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../assets/sample-common.css" />
+  </head>
+  <body>
+    <header><h1>Split Bill</h1></header>
+    <section><div class="wrap"><a class="back" href="../../index.html">Back</a><h2>割り勘計算</h2><p>合計金額、人数、丸め単位から1人あたりの金額を出します。</p></div></section>
+    <section class="demo"><div class="wrap panel"><div class="form"><input id="total" type="number" value="9800"><input id="people" type="number" value="4"><select id="round"><option value="1">1円単位</option><option value="100">100円単位</option><option value="500">500円単位</option></select><button id="calculate">計算</button></div><p id="result" class="calc-result"></p></div></section>
+    <section data-code-viewer></section>
+    <footer>&copy; 2026 Samples</footer>
+    <script src="./script.js"></script><script src="../../assets/copy-code.js"></script>
+  </body>
+</html>

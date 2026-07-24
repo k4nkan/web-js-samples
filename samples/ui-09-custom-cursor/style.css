@@ -1,0 +1,22 @@
+@import url("../../assets/sample-layout.css");
+
+.cursor-area {
+  position: relative;
+  display: grid;
+  min-height: 220px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid #111111;
+  cursor: none;
+}
+
+#cursorDot {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #111111;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}

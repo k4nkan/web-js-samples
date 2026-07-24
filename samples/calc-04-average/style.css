@@ -1,0 +1,5 @@
+@import url("../../assets/sample-layout.css");
+
+#scores {
+  width: min(420px, 100%);
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DB 01 Like Count</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../assets/sample-common.css" />
+    <script src="../../templates/initialize.js"></script>
+  </head>
+  <body>
+    <header><h1>Like Count</h1></header>
+    <section><div class="wrap"><a class="back" href="../../index.html">Back</a><h2>いいね数</h2><p>DBの1行目にあるcountをクリックで増やします。</p></div></section>
+    <section class="setup" data-db-setup>
+      <div class="wrap">
+        <h2>データベース準備</h2>
+        <ol>
+          <li>データベースで「いいね機能」を作成</li>
+          <li>列を `name` / `count` にする</li>
+          <li>GUIで1行追加: `name` は `main`、`count` は `0`</li>
+          <li>HTML側では元からある `initialize.js` をそのまま使う</li>
+        </ol>
+      </div>
+    </section>
+    <section class="demo"><div class="wrap panel"><button id="likeButton" class="like-button">Like 0</button><p id="message" class="muted"></p></div></section>
+    <section data-code-viewer></section>
+    <footer>&copy; 2026 Samples</footer>
+    <script src="./script.js"></script><script src="../../assets/copy-code.js"></script>
+  </body>
+</html>

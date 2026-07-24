@@ -1,0 +1,12 @@
+@import url("../../assets/sample-layout.css");
+
+.setup ol {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.like-button {
+  min-width: 160px;
+  padding: 14px 18px;
+  font-weight: 800;
+}

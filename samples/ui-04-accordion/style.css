@@ -1,0 +1,22 @@
+@import url("../../assets/sample-layout.css");
+
+.accordion {
+  display: grid;
+  gap: 8px;
+}
+
+.accordion-button {
+  text-align: left;
+}
+
+.accordion-body {
+  display: none;
+  margin: 0;
+  padding: 16px;
+  border-radius: 0;
+  background: #f7f8fa;
+}
+
+.accordion-body.is-open {
+  display: block;
+}

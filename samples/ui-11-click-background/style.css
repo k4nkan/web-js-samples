@@ -1,0 +1,16 @@
+@import url("../../assets/sample-layout.css");
+
+.color-stage {
+  display: grid;
+  min-height: 220px;
+  place-items: center;
+  border: 1px solid #111111;
+  background: #f8f9fa;
+  cursor: pointer;
+}
+
+.color-stage p {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+}
