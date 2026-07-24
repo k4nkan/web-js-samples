@@ -8,12 +8,36 @@
   min-height: 260px;
   place-items: center;
   overflow: hidden;
-  background: radial-gradient(
-    circle at var(--x) var(--y),
-    rgba(255, 105, 88, 0.42),
-    rgba(82, 176, 255, 0.2) 28%,
-    rgba(245, 245, 242, 0) 62%
-  );
+  background:
+    radial-gradient(
+      circle at var(--x) var(--y),
+      rgba(232, 150, 158, 0.36),
+      rgba(141, 199, 223, 0.24) 30%,
+      rgba(245, 245, 242, 0) 62%
+    ),
+    radial-gradient(
+      ellipse at 18% 32%,
+      rgba(232, 150, 158, 0.28),
+      rgba(232, 150, 158, 0) 46%
+    ),
+    radial-gradient(
+      ellipse at 78% 26%,
+      rgba(141, 199, 223, 0.28),
+      rgba(141, 199, 223, 0) 48%
+    ),
+    radial-gradient(
+      ellipse at 48% 82%,
+      rgba(180, 218, 185, 0.22),
+      rgba(180, 218, 185, 0) 52%
+    ),
+    linear-gradient(135deg, #f5f5f2, #f4d9dd, #d9ecf4, #f5f5f2);
+  background-size:
+    100% 100%,
+    135% 135%,
+    145% 145%,
+    150% 150%,
+    220% 220%;
+  animation: cursorGradientWave 14s ease-in-out infinite alternate;
   cursor: none;
 }
 
@@ -36,4 +60,39 @@
   opacity: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
+}
+
+@keyframes cursorGradientWave {
+  0% {
+    background-position:
+      0 0,
+      0% 50%,
+      100% 35%,
+      35% 100%,
+      0% 50%;
+  }
+
+  50% {
+    background-position:
+      0 0,
+      100% 35%,
+      12% 68%,
+      72% 28%,
+      100% 45%;
+  }
+
+  100% {
+    background-position:
+      0 0,
+      20% 100%,
+      80% 18%,
+      10% 42%,
+      25% 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-gradient-hero {
+    animation: none;
+  }
 }

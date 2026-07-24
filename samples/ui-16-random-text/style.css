@@ -1,0 +1,9 @@
+@import url("../../assets/sample-layout.css");
+
+.text-result {
+  min-height: 1.4em;
+  margin-top: 18px;
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}

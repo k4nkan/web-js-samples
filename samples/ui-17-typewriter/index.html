@@ -3,28 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>API 03 Dog Image</title>
+    <title>UI 17 Typewriter</title>
     <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../../assets/sample-common.css" />
   </head>
   <body>
     <a class="top-link" href="../../index.html">Top</a>
-    <header><h1>Dog Image</h1></header>
+    <header><h1>Type</h1></header>
     <section>
       <div class="wrap">
         <a class="back" href="../../index.html">Back</a>
-        <h2>犬画像</h2>
+        <h2>タイピング風の表示</h2>
         <p>
-          Dog
-          APIからランダムな画像URLを1件取得し、img要素のsrcに入れて表示します。
+          表示したい文章を1文字ずつ取り出し、setIntervalで少しずつ画面に追加します。
         </p>
       </div>
     </section>
     <section class="demo">
       <div class="wrap panel">
-        <button id="load">画像を取得</button>
-        <div id="result" class="result"></div>
+        <button id="typewriterButton">表示する</button>
+        <p id="typewriterText" class="typing-text"></p>
       </div>
     </section>
     <section data-code-viewer></section>

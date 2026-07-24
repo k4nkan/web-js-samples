@@ -8,6 +8,7 @@
       content="Vanilla JavaScript samples for small HTML/CSS projects."
     />
     <title>Samples</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/home.css" />
     <script src="./assets/home.js" defer></script>
   </head>
@@ -15,7 +16,7 @@
     <a class="top-link" href="#top">Top</a>
     <header>
       <div class="wrap">
-        <h1>Samples</h1>
+        <h1 id="heroScrambleText" aria-live="polite">Samples</h1>
       </div>
     </header>
 
@@ -32,8 +33,20 @@
       <div class="wrap">
         <h2>About</h2>
         <p class="lead">
-          オリジナル制作のHTML/CSSに、Vanilla
-          JavaScriptを少し追加して使えるサンプル集。各ページで追加コードを確認できます。
+          <span class="text-line">
+            HTML/CSSで作ったページに、<span class="nowrap"
+              >Vanilla JavaScript</span
+            >を少し足して使えるサンプル集です。
+          </span>
+        </p>
+        <p class="lead">
+          <span class="text-line">ボタンを押す、入力した文字を使う。</span>
+          <span class="text-line">
+            外部サービスから情報をもらうなど、Webサイトに動きを足す基本を試せます。
+          </span>
+          <span class="text-line">
+            各ページでは、HTML/CSSに足す部分とscript.jsのコードを確認できます。
+          </span>
         </p>
       </div>
     </section>
@@ -43,7 +56,12 @@
         <div class="wrap">
           <h2>見た目・操作</h2>
           <p class="section-lead">
-            表示やユーザーの操作に変化を加えるサンプルです。
+            <span class="text-line">
+              クリック、入力、スクロール、カーソルの動きに合わせて、画面の見た目を変えるサンプルです。
+            </span>
+            <span class="text-line">
+              いつものHTML/CSSに少し動きを足したいときに使います。
+            </span>
           </p>
           <div class="grid">
             <a class="card" href="samples/ui-04-accordion/">
@@ -94,10 +112,26 @@
                 <p>クリックごとに表示を変える。</p>
               </div>
             </a>
+            <a class="card" href="samples/ui-16-random-text/">
+              <div class="preview">Words</div>
+              <div class="body">
+                <span class="number">VISUAL 07</span>
+                <h3>文字のランダム表示</h3>
+                <p>ランダム文字を文章に変えていく。</p>
+              </div>
+            </a>
+            <a class="card" href="samples/ui-17-typewriter/">
+              <div class="preview">Type</div>
+              <div class="body">
+                <span class="number">VISUAL 08</span>
+                <h3>タイピング風の表示</h3>
+                <p>文字を1文字ずつ表示する。</p>
+              </div>
+            </a>
             <a class="card" href="samples/ui-05-filter-list/">
               <div class="preview">Input</div>
               <div class="body">
-                <span class="number">VISUAL 07</span>
+                <span class="number">VISUAL 09</span>
                 <h3>入力に応じた画面変化</h3>
                 <p>入力内容で表示を絞る。</p>
               </div>
@@ -110,7 +144,12 @@
         <div class="wrap">
           <h2>計算・処理</h2>
           <p class="section-lead">
-            入力された値や情報をJavaScriptで処理するサンプルです。
+            <span class="text-line">
+              入力された数字や文字をJavaScriptで計算・判定するサンプルです。
+            </span>
+            <span class="text-line">
+              料金計算、クイズ、日付の差など、ページの中で答えを出したいときに使います。
+            </span>
           </p>
           <div class="grid">
             <a class="card" href="samples/calc-01-basic/">
@@ -177,7 +216,12 @@
         <div class="wrap">
           <h2>外部API</h2>
           <p class="section-lead">
-            公開APIからデータを取得して表示するサンプルです。
+            <span class="text-line">
+              APIは、別のサービスやサイトからデータをもらうための入口です。
+            </span>
+            <span class="text-line">
+              天気、検索結果、画像などをJavaScriptで取得し、自分のページに表示します。
+            </span>
           </p>
           <div class="grid">
             <a class="card" href="samples/api-02-book-search/">
@@ -228,7 +272,12 @@
         <div class="wrap">
           <h2>ブラウザ機能</h2>
           <p class="section-lead">
-            ブラウザに標準で用意されている機能を利用するサンプルです。
+            <span class="text-line">
+              ブラウザに最初から入っている機能を使うサンプルです。
+            </span>
+            <span class="text-line">
+              コピー、音声読み上げ、ファイル選択など、アプリのような操作をページに足せます。
+            </span>
           </p>
           <div class="grid">
             <a class="card" href="samples/browser-01-speech/">
