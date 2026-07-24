@@ -1,10 +1,12 @@
-const button = document.querySelector("#showToast");
-const toast = document.querySelector("#toast");
+{
+  const button = document.querySelector("#showToast");
+  const toast = document.querySelector("#toast");
 
-button.addEventListener("click", () => {
-  toast.classList.add("is-show");
+  button.addEventListener("click", () => {
+    toast.classList.add("is-show");
 
-  setTimeout(() => {
-    toast.classList.remove("is-show");
-  }, 1600);
-});
+    setTimeout(() => {
+      toast.classList.remove("is-show");
+    }, 1600);
+  });
+}

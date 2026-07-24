@@ -1,14 +1,15 @@
-const input = document.querySelector("#userName");
-const button = document.querySelector("#load");
-const result = document.querySelector("#result");
+{
+  const input = document.querySelector("#userName");
+  const button = document.querySelector("#load");
+  const result = document.querySelector("#result");
 
-async function loadUser() {
-  result.textContent = "Loading...";
+  async function loadUser() {
+    result.textContent = "Loading...";
 
-  const url = `https://api.github.com/users/${input.value}`;
-  const user = await fetch(url).then((response) => response.json());
+    const url = `https://api.github.com/users/${input.value}`;
+    const user = await fetch(url).then((response) => response.json());
 
-  result.innerHTML = `
+    result.innerHTML = `
     <div class="card user-card">
       <img src="${user.avatar_url}" alt="">
       <div>
@@ -17,7 +18,8 @@ async function loadUser() {
       </div>
     </div>
   `;
-}
+  }
 
-button.addEventListener("click", loadUser);
-loadUser();
+  button.addEventListener("click", loadUser);
+  loadUser();
+}

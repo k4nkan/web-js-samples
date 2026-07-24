@@ -1,0 +1,18 @@
+@import url("../../assets/sample-layout.css");
+
+.question {
+  margin: 0 0 18px;
+  font-weight: 700;
+}
+
+.quiz-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.quiz-choices button.is-selected {
+  background: #ffffff;
+  color: #111111;
+}

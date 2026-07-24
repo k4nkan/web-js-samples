@@ -1,0 +1,39 @@
+@import url("../../assets/sample-layout.css");
+
+.cursor-gradient-hero {
+  --x: 50%;
+  --y: 50%;
+  position: relative;
+  display: grid;
+  min-height: 260px;
+  place-items: center;
+  overflow: hidden;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    rgba(255, 105, 88, 0.42),
+    rgba(82, 176, 255, 0.2) 28%,
+    rgba(245, 245, 242, 0) 62%
+  );
+  cursor: none;
+}
+
+.cursor-gradient-hero p {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(2rem, 8vw, 5rem);
+  font-weight: 800;
+}
+
+.cursor-gradient-dot {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #111111;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}

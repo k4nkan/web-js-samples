@@ -1,10 +1,12 @@
-const buttons = document.querySelectorAll("[data-tab]");
-const panels = document.querySelectorAll(".tab-panel");
+{
+  const buttons = document.querySelectorAll("[data-tab]");
+  const panels = document.querySelectorAll(".tab-panel");
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    panels.forEach((panel) => {
-      panel.hidden = panel.id !== button.dataset.tab;
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      panels.forEach((panel) => {
+        panel.hidden = panel.id !== button.dataset.tab;
+      });
     });
   });
-});
+}
