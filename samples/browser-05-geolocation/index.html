@@ -16,7 +16,7 @@
         <h2>位置情報</h2>
         <p>
           Geolocation
-          APIで現在地の緯度と経度を取得し、許可されなかった場合のメッセージも表示します。
+          APIで現在地の緯度と経度を取得し、HTTPSやlocalhost以外、権限拒否、タイムアウト時は理由を表示します。
         </p>
       </div>
     </section>
@@ -24,7 +24,9 @@
       <div class="wrap panel">
         <button id="getLocation">取得</button>
         <p id="result" class="calc-result"></p>
-        <p id="message" class="muted"></p>
+        <p id="message" class="muted">
+          位置情報はHTTPSまたはlocalhostで開いたときに使えます。
+        </p>
       </div>
     </section>
     <section data-code-viewer></section>
