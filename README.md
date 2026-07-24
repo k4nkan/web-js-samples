@@ -1,117 +1,21 @@
 # Web JS Samples
 
-オリジナル制作のHTML・CSSに、Vanilla JavaScriptを少し追加して使える機能のサンプル集です。
+Small vanilla JavaScript examples for adding simple interactions to static HTML/CSS pages.
 
-各サンプルは、既存の制作物にJavaScriptを読み込んで使う想定です。
-必要なHTML・CSSの追加も、小さな差分に収まる規模にしています。
-
-## 使い方
-
-コード表示は `fetch()` で各ファイルを読むため、ローカルサーバーで開きます。
+## Run
 
 ```bash
 python3 -m http.server 8000
 ```
 
-ブラウザで `http://localhost:8000` を開きます。
+Open `http://localhost:8000`.
 
-## 方針
-
-- Vanilla JavaScriptのみで実装する
-- 既存のオリジナル制作へ追加できる形にする
-- 1サンプルにつき1つの主要機能を扱う
-- HTML・CSSの変更は必要最低限にする
-- 特定の完成作品ではなく、幅広い制作に応用できる実装を扱う
-- `index.html` / `style.css` / `script.js` を分離する
-- 各ページ下部にHTML・CSS・JSのコードとCopyボタンを置く
-- GitHub Pagesではリポジトリ直下を公開するだけで動く
-
-## 分類
-
-### 見た目・操作
-
-表示やユーザーの操作に変化を加える。
-
-- 要素の表示・非表示
-- アニメーション
-- ポップアップ
-- クリックやカーソルへの反応
-- ランダムな表示や配置
-- 入力に応じた画面変化
-
-### 計算・処理
-
-入力された値や情報をJavaScriptで処理する。
-
-- 四則演算
-- 数値の変換
-- 文字数や回数の集計
-- 条件による判定
-- ランダムな結果の生成
-- 日付や時間を使った処理
-
-### 外部API
-
-公開されているAPIからデータを取得して表示する。
-
-- 入力内容に応じた検索
-- 画像や文章の取得
-- 天気や地域情報の取得
-- 外部データの一覧表示
-- ランダムなデータの取得
-
-### ブラウザ機能
-
-ブラウザに標準で用意されている機能を利用する。
-
-- 音声読み上げ
-- テキストのコピー
-- ファイルや画像の読み込み
-- 現在時刻の取得
-- 位置情報の取得
-- キーボードやマウス操作の検知
-
-## 構成
+## Structure
 
 ```text
-.
-├── index.html
-├── assets/
-│   ├── sample-layout.css
-│   ├── home.css
-│   ├── sample-common.css
-│   └── copy-code.js
-└── samples/
-    ├── ui-01-fade-in/
-    ├── calc-01-basic/
-    ├── api-01-weather/
-    └── browser-01-speech/
+index.html
+assets/
+samples/
 ```
 
-## サンプル一覧
-
-| 区分         | サンプル                     | 主な内容                |
-| ------------ | ---------------------------- | ----------------------- |
-| 見た目・操作 | 要素の表示・非表示           | クリックで表示切り替え  |
-| 見た目・操作 | アニメーション               | 表示時に動きを付ける    |
-| 見た目・操作 | ポップアップ                 | `dialog.showModal()`    |
-| 見た目・操作 | クリックやカーソルへの反応   | `mousemove`             |
-| 見た目・操作 | ランダムな表示や配置         | ランダムな画面変化      |
-| 見た目・操作 | 入力に応じた画面変化         | `input` イベント        |
-| 計算・処理   | 四則演算                     | 数値変換と計算          |
-| 計算・処理   | 数値の変換                   | 単位変換                |
-| 計算・処理   | 文字数や回数の集計           | `value.length`          |
-| 計算・処理   | 条件による判定               | `if` / `else`           |
-| 計算・処理   | ランダムな結果の生成         | `Math.random()`         |
-| 計算・処理   | 日付や時間を使った処理       | `Date`                  |
-| 外部API      | 入力内容に応じた検索         | Open Library            |
-| 外部API      | 画像や文章の取得             | Free Dictionary API     |
-| 外部API      | 天気や地域情報の取得         | Open-Meteo              |
-| 外部API      | 外部データの一覧表示         | Holidays JP             |
-| 外部API      | ランダムなデータの取得       | Dog API                 |
-| ブラウザ機能 | 音声読み上げ                 | SpeechSynthesis         |
-| ブラウザ機能 | テキストのコピー             | Clipboard API           |
-| ブラウザ機能 | ファイルや画像の読み込み     | File input / ObjectURL  |
-| ブラウザ機能 | 現在時刻の取得               | `Date`                  |
-| ブラウザ機能 | 位置情報の取得               | Geolocation API         |
-| ブラウザ機能 | キーボードやマウス操作の検知 | `keydown` / `mousemove` |
+Each sample keeps its HTML, CSS, and JavaScript in separate files and shows copyable code on the page.

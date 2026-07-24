@@ -6,9 +6,10 @@
     <title>DB 02 View Count</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../../assets/sample-common.css" />
-    <script src="../../templates/initialize.js"></script>
+    <script src="../../templates-database/initialize.js"></script>
   </head>
   <body>
+    <a class="top-link" href="../../index.html">Top</a>
     <header><h1>View Count</h1></header>
     <section>
       <div class="wrap">
@@ -24,7 +25,7 @@
           <li>データベースで「閲覧者数」を作成</li>
           <li>列を `page` / `count` にする</li>
           <li>GUIで1行追加: `page` は `top`、`count` は `0`</li>
-          <li>HTML側では元からある `initialize.js` をそのまま使う</li>
+          <li>`templates-database` にある `initialize.js` をそのまま使う</li>
         </ol>
       </div>
     </section>
@@ -40,7 +41,9 @@
       </div>
     </section>
     <section data-code-viewer></section>
-    <footer>&copy; 2026 Samples</footer>
+    <footer>
+      <a href="https://github.com/k4nkan/web-js-samples">GitHub</a>
+    </footer>
     <script src="./script.js"></script>
     <script src="../../assets/copy-code.js"></script>
   </body>

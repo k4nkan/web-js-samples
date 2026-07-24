@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background: #f5f5f2;
@@ -44,6 +50,7 @@ h2 {
 p {
   margin: 0 0 14px;
   font-size: 16px;
+  overflow-wrap: anywhere;
 }
 
 .demo {
@@ -67,7 +74,9 @@ p {
 
 input,
 select,
+textarea,
 button {
+  max-width: 100%;
   border: 1px solid #111111;
   border-radius: 0;
   min-height: 44px;
@@ -90,14 +99,17 @@ button {
 .result {
   display: grid;
   gap: 10px;
+  min-width: 0;
 }
 
 .card,
 .list-item {
+  min-width: 0;
   border: 1px solid #111111;
   border-radius: 0;
   padding: 14px;
   background: #ffffff;
+  overflow-wrap: anywhere;
 }
 
 .muted {
@@ -107,6 +119,17 @@ button {
 .hero-image {
   width: min(420px, 100%);
   border-radius: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.copy-target,
+#toast {
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .fade-target {
@@ -148,6 +171,33 @@ footer {
   background: #f5f5f2;
   color: #111111;
   text-align: center;
+}
+
+footer a {
+  color: inherit;
+  font-weight: 800;
+}
+
+.top-link {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 12;
+  display: inline-grid;
+  min-width: 56px;
+  min-height: 44px;
+  place-items: center;
+  border: 1px solid #111111;
+  background: rgba(245, 245, 242, 0.96);
+  color: #111111;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.top-link:hover {
+  background: #111111;
+  color: #ffffff;
 }
 
 @media (max-width: 640px) {

@@ -3,32 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BROWSER 06 Key Mouse</title>
+    <title>BROWSER 06 Key Input</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../../assets/sample-common.css" />
   </head>
   <body>
-    <header><h1>Input</h1></header>
+    <a class="top-link" href="../../index.html">Top</a>
+    <header><h1>Key</h1></header>
     <section>
       <div class="wrap">
         <a class="back" href="../../index.html">Back</a>
-        <h2>キー・マウス検知</h2>
-        <p>押されたキーとマウス位置を画面に表示します。</p>
+        <h2>キー入力の検知</h2>
+        <p>押されたキーを画面に表示します。</p>
       </div>
     </section>
     <section class="demo">
       <div class="wrap panel">
         <div id="detectArea" class="detect-area" tabindex="0">
-          ここでキー入力・マウス移動
+          ここをクリックしてキー入力
         </div>
         <div class="result">
           <p id="keyText" class="list-item">Key: -</p>
-          <p id="mouseText" class="list-item">Mouse: -</p>
         </div>
       </div>
     </section>
     <section data-code-viewer></section>
-    <footer>&copy; 2026 Samples</footer>
+    <footer>
+      <a href="https://github.com/k4nkan/web-js-samples">GitHub</a>
+    </footer>
     <script src="./script.js"></script>
     <script src="../../assets/copy-code.js"></script>
   </body>

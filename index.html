@@ -7,21 +7,25 @@
       name="description"
       content="Vanilla JavaScript samples for small HTML/CSS projects."
     />
-    <title>Web JS Samples</title>
+    <title>Samples</title>
     <link rel="stylesheet" href="./assets/home.css" />
+    <script src="./assets/home.js" defer></script>
   </head>
-  <body>
+  <body id="top">
+    <a class="top-link" href="#top">Top</a>
     <header>
       <div class="wrap">
-        <h1>Web JS Samples</h1>
+        <h1>Samples</h1>
       </div>
     </header>
 
     <nav class="nav" aria-label="カテゴリ">
-      <a href="#visual">見た目・操作</a>
-      <a href="#process">計算・処理</a>
-      <a href="#api">外部API</a>
-      <a href="#browser">ブラウザ機能</a>
+      <div class="nav-inner">
+        <a href="#visual">見た目・操作</a>
+        <a href="#process">計算・処理</a>
+        <a href="#api">外部API</a>
+        <a href="#browser">ブラウザ機能</a>
+      </div>
     </nav>
 
     <section>
@@ -255,8 +259,8 @@
               <div class="preview">Input</div>
               <div class="body">
                 <span class="number">BROWSER 06</span>
-                <h3>キーボードやマウス操作の検知</h3>
-                <p>押したキーとマウス位置を表示する。</p>
+                <h3>キーボード操作の検知</h3>
+                <p>押したキーを表示する。</p>
               </div>
             </a>
           </div>
@@ -264,6 +268,8 @@
       </section>
     </main>
 
-    <footer>&copy; 2026 Samples</footer>
+    <footer>
+      <a href="https://github.com/k4nkan/web-js-samples">GitHub</a>
+    </footer>
   </body>
 </html>
