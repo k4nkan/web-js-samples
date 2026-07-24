@@ -11,26 +11,26 @@
   background:
     radial-gradient(
       circle at var(--x) var(--y),
-      rgba(232, 150, 158, 0.36),
-      rgba(141, 199, 223, 0.24) 30%,
+      rgba(69, 156, 236, 0.38),
+      rgba(96, 211, 232, 0.26) 30%,
       rgba(245, 245, 242, 0) 62%
     ),
     radial-gradient(
       ellipse at 18% 32%,
-      rgba(232, 150, 158, 0.28),
-      rgba(232, 150, 158, 0) 46%
+      rgba(72, 166, 238, 0.3),
+      rgba(72, 166, 238, 0) 48%
     ),
     radial-gradient(
       ellipse at 78% 26%,
-      rgba(141, 199, 223, 0.28),
-      rgba(141, 199, 223, 0) 48%
+      rgba(104, 215, 234, 0.26),
+      rgba(104, 215, 234, 0) 50%
     ),
     radial-gradient(
       ellipse at 48% 82%,
-      rgba(180, 218, 185, 0.22),
-      rgba(180, 218, 185, 0) 52%
+      rgba(136, 158, 240, 0.2),
+      rgba(136, 158, 240, 0) 54%
     ),
-    linear-gradient(135deg, #f5f5f2, #f4d9dd, #d9ecf4, #f5f5f2);
+    linear-gradient(135deg, #f5f5f2, #d9ecff, #d6f7ff, #e3e8ff, #f5f5f2);
   background-size:
     100% 100%,
     135% 135%,

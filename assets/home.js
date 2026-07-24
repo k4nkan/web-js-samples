@@ -2,7 +2,6 @@
   const hero = document.querySelector("header");
   const cursor = document.createElement("div");
   const randomTextLayer = document.createElement("div");
-  const heroScrambleText = document.querySelector("#heroScrambleText");
   const canUseCustomCursor = window.matchMedia(
     "(hover: hover) and (pointer: fine)",
   ).matches;
@@ -16,8 +15,6 @@
     "Random",
     "Motion",
   ];
-  const scrambleLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  const heroScrambleMessage = "Samples";
 
   let lastTextTime = 0;
 
@@ -77,36 +74,6 @@
 
     text.addEventListener("animationend", () => text.remove(), { once: true });
   };
-
-  const scrambleText = (element, message) => {
-    let frame = 0;
-    const maxFrames = message.length + 12;
-
-    const timer = setInterval(() => {
-      element.textContent = [...message]
-        .map((letter, index) => {
-          if (letter === " ") return " ";
-          if (index < frame - 8) return letter;
-
-          const randomIndex = Math.floor(
-            Math.random() * scrambleLetters.length,
-          );
-          return scrambleLetters[randomIndex];
-        })
-        .join("");
-
-      frame += 1;
-
-      if (frame > maxFrames) {
-        element.textContent = message;
-        clearInterval(timer);
-      }
-    }, 48);
-  };
-
-  if (heroScrambleText) {
-    scrambleText(heroScrambleText, heroScrambleMessage);
-  }
 
   document.addEventListener("pointermove", (event) => {
     if (canUseCustomCursor) {
