@@ -10,9 +10,17 @@
     const data = await fetch(url).then((response) => response.json());
     const address = data.results && data.results[0];
 
-    result.innerHTML = address
-      ? `<div class="card"><h3>${address.address1}${address.address2}</h3><p>${address.address3}</p></div>`
-      : `<div class="card">見つかりませんでした。</div>`;
+    if (!address) {
+      result.innerHTML = `<div class="card">見つかりませんでした。</div>`;
+      return;
+    }
+
+    result.innerHTML = `
+      <div class="card">
+        <h3>${address.address1}${address.address2}</h3>
+        <p>${address.address3}</p>
+      </div>
+    `;
   }
 
   button.addEventListener("click", searchAddress);

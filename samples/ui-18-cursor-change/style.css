@@ -12,11 +12,6 @@
   text-align: center;
 }
 
-.top-page-demo > div:not(.circle-cursor) {
-  position: relative;
-  z-index: 1;
-}
-
 .top-page-demo h3 {
   margin: 0 0 12px;
   font-size: clamp(3rem, 12vw, 7rem);
@@ -36,14 +31,4 @@
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: opacity 0.2s;
-}
-
-@media (pointer: coarse) {
-  .top-page-demo {
-    cursor: auto;
-  }
-
-  .circle-cursor {
-    display: none;
-  }
 }
